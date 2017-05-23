@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iI9-CS-3L6">
+                    <rect key="frame" x="137.5" y="308.5" width="100" height="50"/>
+                    <color key="backgroundColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="RAz-7G-0RS"/>
+                        <constraint firstAttribute="height" constant="50" id="VuM-cl-kXQ"/>
+                    </constraints>
+                    <state key="normal" title="rotation"/>
+                    <connections>
+                        <action selector="rotationAction:" destination="-1" eventType="touchUpInside" id="whu-Nt-h2e"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="second vc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyd-xI-GVy">
+                    <rect key="frame" x="148.5" y="70" width="78.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n80-9E-8P5">
+                    <rect key="frame" x="137" y="366" width="100" height="50"/>
+                    <color key="backgroundColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Aia-CY-lOk"/>
+                        <constraint firstAttribute="width" constant="100" id="gKY-cH-Yzd"/>
+                    </constraints>
+                    <state key="normal" title="present"/>
+                    <connections>
+                        <action selector="presentAction:" destination="-1" eventType="touchUpInside" id="nek-6Y-VVv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfd-Ph-G0F">
+                    <rect key="frame" x="137" y="424" width="100" height="50"/>
+                    <color key="backgroundColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="bMf-sc-ymE"/>
+                        <constraint firstAttribute="width" constant="100" id="eHM-fl-N3Z"/>
+                    </constraints>
+                    <state key="normal" title="push"/>
+                    <connections>
+                        <action selector="pushAction:" destination="-1" eventType="touchUpInside" id="nG8-b7-qOU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="n80-9E-8P5" firstAttribute="top" secondItem="iI9-CS-3L6" secondAttribute="bottom" constant="7.5" id="B5z-4O-9aM"/>
+                <constraint firstItem="iI9-CS-3L6" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="HBB-eR-5AD"/>
+                <constraint firstItem="zfd-Ph-G0F" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WFR-28-CBQ"/>
+                <constraint firstItem="zyd-xI-GVy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="fuZ-ao-FqC"/>
+                <constraint firstItem="zyd-xI-GVy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hPc-BK-NLM"/>
+                <constraint firstItem="n80-9E-8P5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="k1v-Rj-uAE"/>
+                <constraint firstItem="zfd-Ph-G0F" firstAttribute="top" secondItem="n80-9E-8P5" secondAttribute="bottom" constant="8" id="orW-EX-SL9"/>
+                <constraint firstItem="iI9-CS-3L6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="r8s-wX-ChK"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
